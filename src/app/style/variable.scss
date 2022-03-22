@@ -1,0 +1,15 @@
+$programmer-color: #227c9d;
+$teacher-color: #a3c4f3;
+$cashier-color: #fca311;
+$cashier-lighter: lighten($cashier-color, 25%);
+$warning: #fb3449;
+$warning-lighter: lighten($warning, 35%);
+$gray: #f7f7f7;
+$gray-darker: darken($gray, 10%);
+$white: #ffffff;
+$black: #333333;
+$primary-button: #337ab7;
+
+$breakpoint-sm: 576px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

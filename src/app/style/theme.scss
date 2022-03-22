@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    background-color: $white;
+    font-family:  roboto, Tahoma, sans-serif;
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    font-family: roboto, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}

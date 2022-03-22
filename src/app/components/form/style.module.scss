@@ -1,0 +1,131 @@
+.form {
+  color: #fff;
+  .select_container {
+    position: relative;
+    display: inline-block;
+
+    &:before {
+      content: "";
+      height: 30px;
+      position: absolute;
+      right: 7px;
+      top: 3px;
+      width: 22px;
+      background: #fff; 
+
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      pointer-events: none;
+      display: block;
+    }
+    &:after {
+      content: " ";
+      position: absolute;
+      right: 15px;
+      top: 46%;
+      margin-top: -3px;
+      z-index: 2;
+      pointer-events: none;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6.9px 4px 0 4px;
+      border-color: #aaa transparent transparent transparent;
+      pointer-events: none;
+    }
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 30px 0 10px;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    line-height: 36px;
+    height: 36px;
+    background: #fff;
+    min-width: 200px;
+    margin: 0 5px 5px 0;
+  }
+
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .container input:checked ~ .checkmark {
+    background-color: #2196f3;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    label {
+      margin-bottom: 5px;
+    }
+    input {
+      height: 36px;
+      outline: none;
+      border: 1px solid #e0e0e0;
+      border-radius: 3px;
+      max-width: 200px;
+    }
+  }
+  button {
+    padding: 12px 18px;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #04AA6D;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+}

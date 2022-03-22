@@ -1,0 +1,32 @@
+@import '../../style/variable.scss';
+.tabs {
+    width: 100%;
+    height: auto;
+    color: $white;
+    overflow-x: auto;
+    .nav {
+      width: 100%;
+      margin: 0 auto 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 0px;
+    }
+    .nav li {
+      width: 50%;
+      padding: 1rem;
+      list-style: none;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.7s;
+    }
+    .programmer {
+      background-color: $programmer-color;
+    }
+    .teacher {
+      background-color: $teacher-color;
+    }
+    .cashier {
+      background-color: $cashier-color;
+    }
+  }
